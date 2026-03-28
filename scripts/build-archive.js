@@ -7,6 +7,7 @@ const XML_PATH = path.join(EXPORT_DIR, "wordpress.2014-07-02.xml");
 const BLOG_DIR = path.join(EXPORT_DIR, "blog");
 const OUTPUT_DIR = path.join(ROOT, "site");
 const POSTS_PER_PAGE = 12;
+const BUILD_VERSION = String(Date.now());
 
 const XML = fs.readFileSync(XML_PATH, "utf8");
 
@@ -342,7 +343,7 @@ function layout({ title, description = "", content, canonical = "/", sidebarData
   <title>${safeTitle}</title>
   <meta name="description" content="${safeDescription}">
   <link rel="canonical" href="${canonical}">
-  <link rel="stylesheet" href="/styles/site.css">
+  <link rel="stylesheet" href="/styles/site.css?v=${BUILD_VERSION}">
 </head>
 <body>
   <main class="page-shell">
@@ -355,10 +356,10 @@ function layout({ title, description = "", content, canonical = "/", sidebarData
       </header>
       ${archiveNotice}
       <div class="layout-grid">
-      ${sidebar}
       <div class="main-column">
         ${content}
       </div>
+      ${sidebar}
       </div>
     </div>
   </main>
@@ -609,8 +610,8 @@ function buildStyles() {
   --accent: #515815;
   --accent-soft: #f3efe8;
   --heading: #330000;
-  --content-width: 700px;
-  --reading-width: 780px;
+  --content-width: 770px;
+  --reading-width: 858px;
   --shadow: none;
   --radius: 10px;
 }
@@ -620,7 +621,7 @@ function buildStyles() {
 }
 
 html {
-  font-size: 16px;
+  font-size: 17.6px;
 }
 
 body {
@@ -682,7 +683,7 @@ a:hover {
 .post-card__footer,
 .post-page__categories {
   color: #999999;
-  font-size: 0.95em;
+  font-size: 14px;
 }
 
 .site-title {
@@ -709,12 +710,13 @@ a:hover {
   background: #f9f7f5;
   border: 1px solid #e2cbac;
   color: #5a4f2a;
+  font-size: 14px;
   line-height: 1.6;
 }
 
 .layout-grid {
   display: grid;
-  grid-template-columns: 185px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 204px;
   gap: 0;
   align-items: start;
   direction: ltr;
@@ -724,7 +726,7 @@ a:hover {
 .main-column {
   min-width: 0;
   direction: rtl;
-  padding: 1.35rem 1.7rem 1.5rem 1.2rem;
+  padding: 1.15rem 1.2rem 1.35rem 1.2rem;
 }
 
 .sidebar {
@@ -759,6 +761,7 @@ a:hover {
 .sidebar-search__label {
   font-weight: bold;
   color: #000;
+  font-size: 14px;
 }
 
 .sidebar-search__input {
@@ -784,12 +787,14 @@ a:hover {
 .sidebar-card--profile p {
   margin: 0 0 0.8rem;
   color: #4f4f2b;
+  font-size: 14px;
   line-height: 1.45;
+  text-align: right;
 }
 
 .sidebar-profile__email {
   color: #666;
-  font-size: 0.95em;
+  font-size: 14px;
 }
 
 .sidebar-list {
@@ -805,7 +810,7 @@ a:hover {
   gap: 0.8rem;
   padding: 0.2rem 0;
   border-top: 0;
-  font-size: 1em;
+  font-size: 14px;
 }
 
 .sidebar-list li:first-child {
@@ -853,11 +858,11 @@ a:hover {
 .archive-grid,
 .categories-grid {
   display: grid;
-  gap: 1em;
+  gap: 0.35em;
 }
 
 .post-card {
-  margin: 0 0 2em;
+  margin: 0 0 0.8em;
   padding: 0;
 }
 
@@ -880,6 +885,7 @@ a:hover {
 .post-card__excerpt {
   margin: 0;
   color: var(--ink);
+  font-size: 15px;
   line-height: 1.7;
 }
 
@@ -887,8 +893,9 @@ a:hover {
   display: block;
   clear: both;
   padding: 3px 0;
-  margin: 1em 0;
+  margin: 0.5em 0 0.35em;
   color: #999999;
+  font-size: 15px;
   border-bottom: 1px solid #eeeecc;
 }
 
@@ -959,8 +966,9 @@ a:hover {
 .post-page__content {
   margin: 1em 0;
   padding: 0;
-  font-size: 1.2em;
+  font-size: 15px;
   color: var(--ink);
+  line-height: 1.7;
 }
 
 .post-page__content > * {
@@ -1072,12 +1080,18 @@ a:hover {
 
 .comment__body {
   color: #334155;
+  font-size: 15px;
   line-height: 1.7;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px), (hover: none) and (pointer: coarse) {
   html {
-    font-size: 17px;
+    font-size: 19px;
+  }
+
+  body {
+    font-size: 1em;
+    line-height: 1.78;
   }
 
   .site-header {
@@ -1094,7 +1108,7 @@ a:hover {
 
   .sidebar {
     position: static;
-    order: -1;
+    order: 2;
     padding: 0 1.1rem 1.1rem;
   }
 
@@ -1109,7 +1123,22 @@ a:hover {
   }
 
   .post-card {
-    padding: 1rem 1rem;
+    padding: 1rem 0;
+  }
+
+  .post-card__excerpt,
+  .post-page__content,
+  .sidebar-list li,
+  .sidebar-card--profile p,
+  .sidebar-profile__email,
+  .sidebar-search__label,
+  .post-card__meta,
+  .post-page__meta,
+  .post-card__footer,
+  .post-page__categories,
+  .archive-notice,
+  .comment__body {
+    font-size: 18px;
   }
 
   .post-nav {
@@ -1128,11 +1157,11 @@ a:hover {
   }
 
   .main-column {
-    padding: 1rem;
+    padding: 0.6rem 0.75rem 1rem;
   }
 
   .site-title {
-    font-size: 3em;
+    font-size: 3.2em;
   }
 
   .site-header__inner {
@@ -1142,6 +1171,12 @@ a:hover {
 
   .archive-notice {
     margin: 0.8rem 1rem 0;
+  }
+
+  .sidebar-search__input {
+    width: 100%;
+    max-width: 150px;
+    height: 28px;
   }
 }`;
 }
