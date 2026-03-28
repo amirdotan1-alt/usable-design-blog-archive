@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AJAX וקוראי מסך - צעד אחורה לנגישות? | עיצוב שמיש</title>
+  <meta name="description" content="שילוב הטכנולוגיות שנקרא בקיצור AJAX הוא אחד הסממנים הטכנולוגים המזוהים ביותר עם תופעת הווב 2.0 . מדובר במעבר מהמודל הקלאסי של אתר אינטרנט בו כל שינוי הכי קטן מצריך לעיתים טעינה מחדש של כל העמוד למצב בו השינויים ממוקדי...">
+  <link rel="canonical" href="/posts/2007/03/ajax-וקוראי-מסך-צעד-אחורה-לנגישות/">
+  <link rel="stylesheet" href="/styles/site.css">
+</head>
+<body>
+  <main class="page-shell">
+    <div class="outer-shell">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <h1 class="site-title"><a href="/">עיצוב שמיש</a></h1>
+          <p class="site-description">בלוג בנושא שמישות וחוויית משתמש</p>
+        </div>
+      </header>
+      <div class="archive-notice">זהו ארכיון סטטי של הבלוג שכתבתי בין השנים 2005 ו-2013, ובו 228 פוסטים שפורסמו לאורך השנים. הבלוג שוחזר במרץ 2026. חלק מהתמונות המקוריות בפוסטים חסרות.</div>
+      <div class="layout-grid">
+      <aside class="sidebar" aria-label="ניווט משני">
+  <form class="sidebar-search" action="/" method="get">
+    <label class="sidebar-search__label" for="sidebar-search-input">חפש</label>
+    <input id="sidebar-search-input" class="sidebar-search__input" type="text" name="q">
+  </form>
+  <section class="sidebar-card sidebar-card--profile">
+    <img class="sidebar-profile__image" src="/blog_images/me2.jpg" alt="אמיר דותן">
+    <h2>אמיר דותן</h2>
+    <p>חי בלונדון מאז שנת 2001. מלמד כבר ארבע שנים עיצוב ממשקים, שמישות וקורסים העוסקים בחלק מלימודי התואר הראשון במכללת SAE. מלמד לתואר שני באינטראקציית אדם-מחשב.</p>
+    <p class="sidebar-profile__email">amirdotan1 [at] gmail.com</p>
+  </section>
+  <section class="sidebar-card">
+    <h2>קטגוריות</h2>
+    <ul class="sidebar-list">
+      <li><a href="/categories/תהליכים-שיטות-וכלי-עבודה/">תהליכים, שיטות וכלי עבודה</a> <span>52</span></li><li><a href="/categories/טכנולוגיה/">טכנולוגיה</a> <span>47</span></li><li><a href="/categories/שמישות/">שמישות</a> <span>31</span></li><li><a href="/categories/כללי/">כללי</a> <span>25</span></li><li><a href="/categories/משולחן-העבודה-מחקר/">משולחן העבודה - מחקר</a> <span>16</span></li><li><a href="/categories/נגישות/">נגישות</a> <span>16</span></li><li><a href="/categories/היבטים-חברתיים/">היבטים חברתיים</a> <span>15</span></li><li><a href="/categories/מספסל-הלימודים-תואר-שני/">מספסל הלימודים - תואר שני</a> <span>15</span></li><li><a href="/categories/היבטים-תרבותיים/">היבטים תרבותיים</a> <span>14</span></li><li><a href="/categories/חוויתי-על-בשרי/">חוויתי על בשרי</a> <span>12</span></li><li><a href="/categories/היבטים-קוגנטיבים/">היבטים קוגנטיבים</a> <span>11</span></li><li><a href="/categories/משולחן-העבודה-lab49/">משולחן העבודה - Lab49</a> <span>10</span></li><li><a href="/categories/עיצוב/">עיצוב</a> <span>9</span></li><li><a href="/categories/ספרות-מקצועית/">ספרות מקצועית</a> <span>8</span></li><li><a href="/categories/חוויית-משתמש-במגזר-הפיננסי/">חוויית משתמש במגזר הפיננסי</a> <span>7</span></li><li><a href="/categories/משולחן-העבודה-הוראה/">משולחן העבודה - הוראה</a> <span>5</span></li><li><a href="/categories/לימודים-גבוהים-באינטראקציית-אדם-מחשב/">לימודי תואר שני באינטראקציית אדם-מחשב</a> <span>4</span></li><li><a href="/categories/מספסל-הלימודים-תואר-ראשון/">מספסל הלימודים - תואר ראשון</a> <span>2</span></li>
+    </ul>
+  </section>
+  <section class="sidebar-card">
+    <h2>ארכיון חודשי</h2>
+    <ul class="sidebar-list">
+      <li><a href="/archive/2013/07/">יולי 2013</a> <span>1</span></li><li><a href="/archive/2012/12/">דצמבר 2012</a> <span>2</span></li><li><a href="/archive/2012/11/">נובמבר 2012</a> <span>1</span></li><li><a href="/archive/2012/06/">יוני 2012</a> <span>1</span></li><li><a href="/archive/2012/03/">מרץ 2012</a> <span>1</span></li><li><a href="/archive/2012/02/">פברואר 2012</a> <span>7</span></li><li><a href="/archive/2012/01/">ינואר 2012</a> <span>1</span></li><li><a href="/archive/2011/12/">דצמבר 2011</a> <span>1</span></li><li><a href="/archive/2011/10/">אוקטובר 2011</a> <span>1</span></li><li><a href="/archive/2011/09/">ספטמבר 2011</a> <span>1</span></li><li><a href="/archive/2011/07/">יולי 2011</a> <span>2</span></li><li><a href="/archive/2011/05/">מאי 2011</a> <span>1</span></li><li><a href="/archive/2011/02/">פברואר 2011</a> <span>1</span></li><li><a href="/archive/2010/12/">דצמבר 2010</a> <span>1</span></li><li><a href="/archive/2010/11/">נובמבר 2010</a> <span>2</span></li><li><a href="/archive/2010/10/">אוקטובר 2010</a> <span>1</span></li><li><a href="/archive/2010/09/">ספטמבר 2010</a> <span>1</span></li><li><a href="/archive/2010/08/">אוגוסט 2010</a> <span>1</span></li><li><a href="/archive/2010/07/">יולי 2010</a> <span>1</span></li><li><a href="/archive/2010/06/">יוני 2010</a> <span>2</span></li><li><a href="/archive/2010/05/">מאי 2010</a> <span>1</span></li><li><a href="/archive/2010/03/">מרץ 2010</a> <span>3</span></li><li><a href="/archive/2010/02/">פברואר 2010</a> <span>1</span></li><li><a href="/archive/2010/01/">ינואר 2010</a> <span>2</span></li><li><a href="/archive/2009/12/">דצמבר 2009</a> <span>5</span></li><li><a href="/archive/2009/11/">נובמבר 2009</a> <span>4</span></li><li><a href="/archive/2009/10/">אוקטובר 2009</a> <span>1</span></li><li><a href="/archive/2009/09/">ספטמבר 2009</a> <span>2</span></li><li><a href="/archive/2009/08/">אוגוסט 2009</a> <span>1</span></li><li><a href="/archive/2009/07/">יולי 2009</a> <span>3</span></li><li><a href="/archive/2009/06/">יוני 2009</a> <span>2</span></li><li><a href="/archive/2009/05/">מאי 2009</a> <span>2</span></li><li><a href="/archive/2009/04/">אפריל 2009</a> <span>4</span></li><li><a href="/archive/2009/03/">מרץ 2009</a> <span>3</span></li><li><a href="/archive/2009/02/">פברואר 2009</a> <span>4</span></li><li><a href="/archive/2009/01/">ינואר 2009</a> <span>3</span></li><li><a href="/archive/2008/12/">דצמבר 2008</a> <span>7</span></li><li><a href="/archive/2008/11/">נובמבר 2008</a> <span>4</span></li><li><a href="/archive/2008/10/">אוקטובר 2008</a> <span>3</span></li><li><a href="/archive/2008/09/">ספטמבר 2008</a> <span>3</span></li><li><a href="/archive/2008/08/">אוגוסט 2008</a> <span>6</span></li><li><a href="/archive/2008/07/">יולי 2008</a> <span>6</span></li><li><a href="/archive/2008/06/">יוני 2008</a> <span>4</span></li><li><a href="/archive/2008/05/">מאי 2008</a> <span>3</span></li><li><a href="/archive/2008/04/">אפריל 2008</a> <span>6</span></li><li><a href="/archive/2008/03/">מרץ 2008</a> <span>2</span></li><li><a href="/archive/2008/02/">פברואר 2008</a> <span>5</span></li><li><a href="/archive/2008/01/">ינואר 2008</a> <span>4</span></li><li><a href="/archive/2007/12/">דצמבר 2007</a> <span>8</span></li><li><a href="/archive/2007/11/">נובמבר 2007</a> <span>4</span></li><li><a href="/archive/2007/10/">אוקטובר 2007</a> <span>5</span></li><li><a href="/archive/2007/09/">ספטמבר 2007</a> <span>5</span></li><li><a href="/archive/2007/08/">אוגוסט 2007</a> <span>8</span></li><li><a href="/archive/2007/07/">יולי 2007</a> <span>6</span></li><li><a href="/archive/2007/06/">יוני 2007</a> <span>10</span></li><li><a href="/archive/2007/05/">מאי 2007</a> <span>12</span></li><li><a href="/archive/2007/04/">אפריל 2007</a> <span>5</span></li><li><a href="/archive/2007/03/">מרץ 2007</a> <span>7</span></li><li><a href="/archive/2007/02/">פברואר 2007</a> <span>6</span></li><li><a href="/archive/2006/03/">מרץ 2006</a> <span>3</span></li><li><a href="/archive/2006/02/">פברואר 2006</a> <span>1</span></li><li><a href="/archive/2006/01/">ינואר 2006</a> <span>4</span></li><li><a href="/archive/2005/12/">דצמבר 2005</a> <span>3</span></li><li><a href="/archive/2005/11/">נובמבר 2005</a> <span>2</span></li><li><a href="/archive/2005/10/">אוקטובר 2005</a> <span>6</span></li><li><a href="/archive/2005/09/">ספטמבר 2005</a> <span>9</span></li>
+    </ul>
+  </section>
+</aside>
+      <div class="main-column">
+        <article class="post-page">
+  <header class="post-page__header">
+    <p class="post-page__meta">27 במרץ 2007</p>
+    <h1>AJAX וקוראי מסך - צעד אחורה לנגישות?</h1>
+    <p class="post-page__categories"><a href="/categories/טכנולוגיה/">טכנולוגיה</a> · <a href="/categories/נגישות/">נגישות</a></p>
+  </header>
+  <div class="post-page__content">
+    קוראי מסך נמצאים בשימוש יום יומי על ידי משתמשים עיוורים הנעזרים בהם על מנת להשתמש באינטרנט. גם משתמשים דיסלקטים מעדיפים לעיתים להשתמש בקורא מסך במקום לקרוא טקסט. ההמלצות המתיישנות של ה-<a href="http://www.w3.org/WAI/" target="blank">WAI</a> נועדו ליידע בוני אתרים כיצד להנגיש את התכנים שלהם על ידי התחשבות בין השאר בקוראי מסך. ההנחיה הקלאסית היא להוסיף מאפיין alt לתמונות שיכלול תואר קצר וקולע של התמונה, וישנם עוד אחרים שדורשים התייחסות על מנת להבטיח שהאתר עומד בדרישות בכדי להיחשב נגיש על פי חוק (ע"ע <a href="http://www.webcredible.co.uk/user-friendly-resources/web-accessibility/uk-website-legal-requirements.shtml" target="blank">The Disability Discrimination Act</a> בבריטניה ו-<a href="http://www.section508.gov/" target="blank">Section 508</a> בארצות הברית). ההנחיות פורסמו ב-1999 ומאז קרו המון דברים בכל הקשור לבניית אתרים, החל מהשימוש הנרחב (יחסית) בפלאש והפרדת תוכן מעיצוב על ידי שימוש ב-CSS בבניית אתרי HTML.
+
+מזה מספר שנים מפתחי אתרים מחכים בכיליון עיניים להנחיות המעודכנות והנה נראה שעד שהן יצאו גם אותן יאלצו לעדכן כי בינתיים AJAX הגיע לשכונה ופתאום עושים את הדברים קצת אחרת - עוד פעם. היישום הנרחב של AJAX החל עם יישומים חדשניים בעלי אופי אפליקטיבי מצד חברות כמו גוגל. התגובות הראשונות היו: "ואוו! איך הם עשו את זה? זה זורם! זה כאילו לא אתר אינטרנט! אני רוצה גם!" והשאר היסטוריה (וגם לא מעט היסטריה). מבחינת שמישות מדובר בצעד חיובי היות והמודל הישן של רענון דף בגלל כל שטיק היה בעייתי. לבהות במסך לבן כל פעם שלוחצים על קישור או כפתור לא בדיוק מעודד תחושת שליטה ונוחות. לפני שנה וחצי <a href="/posts/2005/11/העצמת-ממשק-באמצעות-ajax-2/">פרסמתי פה מאמר בנושא AJAX ושמישות</a> והפעם אני רוצה להתייחס לֹֹ-AJAX ונגישות.
+
+הפארדוקס הוא שמה שהופך ממשק AJAX ליותר שמיש יכול להפוך אותו לפחות נגיש. הבעיה נעוצה בכך שקוראי מסך נבנו על פי המודל הקלאסי בו הסרבר מחזיר תמיד דפים שלמים. עדכון מהבחינה הזאת הוא טעינה של דף כתוצאה מלחיצה על כפתור ניווט למשל. כעת, העדכונים מתרחשים בדפדפן תוך שילוב הסרבר מאחורי הקלעים, בצורה אסינכרונית כך שהם הרבה פחות מורגשים ממסך לבן. <a href="http://www.sitepoint.com/article/ajax-screenreaders-work" target="blank">הניסויים של ג'יימס אדווארדס</a> נועדו לבדוק דרכים שונות כיצד קוראי מסך יכולים לקלוט עדכונים מקומיים בדף. הוא בחן מספר גישות והגיע למסקנה (במאי 2006) שאין פתרון משביע רצון. קוראי מסך מבוססים על קריאה לינארית של אתר, כאשר המעבר למודל אפליקטיבי יוצר מציאות של מסך בו דברים מתרחשים בכל מיני מקומות, בלי סדר מסויים. חיפשתי עדויות ורשמים יותר עדכניים בנושא הזה אך לא מצאתי משהו שסותר את הממצאים הללו. אשמח לשמוע על התפתחויות ועדכונים בנושא ממישהו שיודע.
+
+בהיבט הזה, ממשקי AJAX סובלים מאותה בעיה כמו ממשקי פלאש. הגישה האפליקטיבית שלהם היתה מההתחלה יתרון משמעותי על ממשקי ה-HTML שהרגישו לעיתים מיושנים עם טעינות דפים בלתי פוסקות. אם לפני שנתיים הם היו בגדר מיעוט היום אנו רואים שהם נהיים כמעט סטנדרט בפיתוח אתרים. יכול להיות שזה יחייב את יצרני קוראי המסכים לשקול שינויים אפשריים או אולי שינוי יותר מהותי ברמת הדפדפנים עצמם. אדווארדס עצמו מעלה את האפשרות שאולי מי שמשתמש בקוראי מסך "אינם אמורים" להשתמש בממשקים אפליקטיבים וצריכים אולי גרסה שמתאימה לקוראי מסך. זה כמובן סותר את כל הרעיון של נגישות ועיצוב אוניברסאלי.
+
+זה אינו נושא פשוט, ונראה שבכל ההייפ של ווב 2.0 קל לשכוח את כל מה שנלמד עד כה בתחום של נגישות אתרים. אני בספק אם ההנחיות המעודכנות של ה-WAI יכללו התייחסות ל-AJAX אך אולי אני טועה. אני לא טוען כמובן שלא צריך לעשות שימוש בטכנולוגיות כי יש להן יתרונות ברורים מבחינת שמישות (וגם בעיות שמישות חדשות מן הסתם). אני כן חושב שמפתחי אתרים ששואפים לבנות ממשקים נגישים צריכים להיות מודעים לבעייתיות הטמונה ב-AJAX וקוראי מסך ולעשות את השיקולים שלהם. זה נכון לגבי טכנולוגיות אחרות וישנות יותר שאינן אידיאליות מבחינת נגישות כמו פלאש וג'אווה. מהבחינה הזאת זה באמת לא משהו חדש.
+
+<h3>
+11.04.07 עדכון</h3>
+
+<a href="http://www.alistapart.com/articles/waiaria">במאמר הזה שפורסם שלשום</a>, מסביר מרטין קליהן כיצד תוספות ל-XHTML מאפשרות לקוראי מסך לעבוד בצורה טובה יותר עם אפליקציות AJAX. מסתבר שבצורה מפתיעה, התהליך של יישום ההמלצות הואץ בכדי לענות על הצרכים החדשים והן ככל הנראה יכנסו לתוקף בקרוב מאוד.
+  </div>
+  <nav class="post-nav" aria-label="פוסט קודם או הבא">
+  <a class="post-nav__link post-nav__link--previous" href="/posts/2007/03/פרוייקט-הגמר-שלי-החלטה-התקבלה/">
+    <span class="post-nav__label">הקודם</span>
+    <strong>פרוייקט הגמר שלי - החלטה התקבלה</strong>
+  </a>
+  <a class="post-nav__link post-nav__link--next" href="/posts/2007/04/ווב-20-השמישות-מובנת-בעיצוב/">
+    <span class="post-nav__label">הבא</span>
+    <strong>ווב 2.0 - השמישות מובנת בעיצוב</strong>
+  </a>
+</nav>
+  <section class="comments">
+  <h2>2 תגובות</h2>
+  <article class="comment">
+    <header class="comment__meta">
+      <strong>talyaav</strong>
+      <span>28 במרץ 2007</span>
+    </header>
+    <div class="comment__body">יש כבר התחלה של פתרון ע"י ה- Roadmap for Accessible Rich Internet Applications (WAI-ARIA)
+
+http://www.w3.org/2006/09/aria-pressrelease.html.en</div>
+  </article><article class="comment">
+    <header class="comment__meta">
+      <strong>אמיר דותן</strong>
+      <span>28 במרץ 2007</span>
+    </header>
+    <div class="comment__body">תודה. תארתי לעצמי שמן הסתם התחילה עבודה בנושא. אני עדיין לא חושב שמשהו מזה יספיק להכנס להנחיות החדשות שאמורות להתפרסם השנה ואז למעשה נוצר מצב מגוחך אך משום מה בלתי נמנע בו יש דיליי של כמה שנים בין ההמלצות של ה-W3C לבין מה שקורה בשטח. עד שהם מצמצמים את הפערים כבר יש להיט חדש.</div>
+  </article>
+</section>
+</article>
+      </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

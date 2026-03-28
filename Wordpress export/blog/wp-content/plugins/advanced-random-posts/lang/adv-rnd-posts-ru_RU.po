@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Advanced Random Posts\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-27 12:36+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Fat Cow <zhr@tut.by>\n"
+"Language-Team: Fat Cow <zhr@tut.by>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: adv-random-posts.php:15
+msgid "Shows Random Posts. You can customize it easily."
+msgstr "Показывать Случайные посты. Вы можете их легко изменить."
+
+#: adv-random-posts.php:17
+#: adv-random-posts.php:68
+msgid "Advanced Random Posts"
+msgstr "Advanced Random Posts"
+
+#: adv-random-posts.php:23
+msgid "Random Posts"
+msgstr "Случайные посты"
+
+#: adv-random-posts.php:84
+msgid "Title:"
+msgstr "Название: "
+
+#: adv-random-posts.php:89
+msgid "Number of posts to show:"
+msgstr "Количество постов для показа:"
+
+#: adv-random-posts.php:91
+msgid "(at most 20)"
+msgstr "(не больше, чем 20)"
+
+#: adv-random-posts.php:95
+msgid "Excerpt length (letters):"
+msgstr "Длина выдержки (букв):"
+
+#: adv-random-posts.php:97
+msgid "0 - Don't show excerpt"
+msgstr "0 - не показывать выдержку"
+
+#: adv-random-posts.php:101
+msgid "Thumbnail Custom Field Name:"
+msgstr "Имя поля эскиза"
+
+#: adv-random-posts.php:104
+msgid "Width:"
+msgstr "Ширина:"
+
+#: adv-random-posts.php:105
+msgid "Height:"
+msgstr "Длина:"
+
+#: adv-random-posts.php:109
+msgid "Get first image of post"
+msgstr "Получить первое изображение поста"
+
+#: adv-random-posts.php:113
+msgid "Get first attached image of post"
+msgstr "Получить первое прикрепленное изображение поста"
+
+#: adv-random-posts.php:116
+msgid "Default image:"
+msgstr "Стандартное изображение:"
+
+#: adv-random-posts.php:118
+msgid "if there is no thumbnail, use this"
+msgstr "если нет превью, использовать это"
+
+#: adv-random-posts.php:122
+msgid "Categories:"
+msgstr "Категории:"
+
+#: adv-random-posts.php:124
+msgid "Category IDs, separated by commas."
+msgstr "ID категорий, разделенные запятыми."
+
+#: adv-random-posts.php:129
+msgid "Get posts from current category"
+msgstr "Получить посты из текущей категории"
+

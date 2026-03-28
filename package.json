@@ -1,0 +1,9 @@
+{
+  "name": "usable-design-blog-archive",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static archive generator for a legacy WordPress blog export",
+  "scripts": {
+    "build": "node scripts/build-archive.js"
+  }
+}

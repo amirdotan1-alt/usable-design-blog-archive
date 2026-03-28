@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>פיתוח אב טיפוס אינטראקטיבי עם iPlotz | עיצוב שמיש</title>
+  <meta name="description" content="לפני שבועיים כתבתי על Axure , תוכנה המאפשרת ליצור אב טיפוס אינטראקטיבי תוך כדי גרירה וסידור של רכיבי ממשק מוגדרים מראש. מאז יצא לי לנסות את iPlotz המאפשרת גם היא ליצור במהירות אב טיפוס אינטראקטיבי המורכב מאוסף של מסכים.">
+  <link rel="canonical" href="/posts/2009/06/פיתוח-אב-טיפוס-סטטי-עם-iplotz/">
+  <link rel="stylesheet" href="/styles/site.css">
+</head>
+<body>
+  <main class="page-shell">
+    <div class="outer-shell">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <h1 class="site-title"><a href="/">עיצוב שמיש</a></h1>
+          <p class="site-description">בלוג בנושא שמישות וחוויית משתמש</p>
+        </div>
+      </header>
+      <div class="archive-notice">זהו ארכיון סטטי של הבלוג שכתבתי בין השנים 2005 ו-2013, ובו 228 פוסטים שפורסמו לאורך השנים. הבלוג שוחזר במרץ 2026. חלק מהתמונות המקוריות בפוסטים חסרות.</div>
+      <div class="layout-grid">
+      <aside class="sidebar" aria-label="ניווט משני">
+  <form class="sidebar-search" action="/" method="get">
+    <label class="sidebar-search__label" for="sidebar-search-input">חפש</label>
+    <input id="sidebar-search-input" class="sidebar-search__input" type="text" name="q">
+  </form>
+  <section class="sidebar-card sidebar-card--profile">
+    <img class="sidebar-profile__image" src="/blog_images/me2.jpg" alt="אמיר דותן">
+    <h2>אמיר דותן</h2>
+    <p>חי בלונדון מאז שנת 2001. מלמד כבר ארבע שנים עיצוב ממשקים, שמישות וקורסים העוסקים בחלק מלימודי התואר הראשון במכללת SAE. מלמד לתואר שני באינטראקציית אדם-מחשב.</p>
+    <p class="sidebar-profile__email">amirdotan1 [at] gmail.com</p>
+  </section>
+  <section class="sidebar-card">
+    <h2>קטגוריות</h2>
+    <ul class="sidebar-list">
+      <li><a href="/categories/תהליכים-שיטות-וכלי-עבודה/">תהליכים, שיטות וכלי עבודה</a> <span>52</span></li><li><a href="/categories/טכנולוגיה/">טכנולוגיה</a> <span>47</span></li><li><a href="/categories/שמישות/">שמישות</a> <span>31</span></li><li><a href="/categories/כללי/">כללי</a> <span>25</span></li><li><a href="/categories/משולחן-העבודה-מחקר/">משולחן העבודה - מחקר</a> <span>16</span></li><li><a href="/categories/נגישות/">נגישות</a> <span>16</span></li><li><a href="/categories/היבטים-חברתיים/">היבטים חברתיים</a> <span>15</span></li><li><a href="/categories/מספסל-הלימודים-תואר-שני/">מספסל הלימודים - תואר שני</a> <span>15</span></li><li><a href="/categories/היבטים-תרבותיים/">היבטים תרבותיים</a> <span>14</span></li><li><a href="/categories/חוויתי-על-בשרי/">חוויתי על בשרי</a> <span>12</span></li><li><a href="/categories/היבטים-קוגנטיבים/">היבטים קוגנטיבים</a> <span>11</span></li><li><a href="/categories/משולחן-העבודה-lab49/">משולחן העבודה - Lab49</a> <span>10</span></li><li><a href="/categories/עיצוב/">עיצוב</a> <span>9</span></li><li><a href="/categories/ספרות-מקצועית/">ספרות מקצועית</a> <span>8</span></li><li><a href="/categories/חוויית-משתמש-במגזר-הפיננסי/">חוויית משתמש במגזר הפיננסי</a> <span>7</span></li><li><a href="/categories/משולחן-העבודה-הוראה/">משולחן העבודה - הוראה</a> <span>5</span></li><li><a href="/categories/לימודים-גבוהים-באינטראקציית-אדם-מחשב/">לימודי תואר שני באינטראקציית אדם-מחשב</a> <span>4</span></li><li><a href="/categories/מספסל-הלימודים-תואר-ראשון/">מספסל הלימודים - תואר ראשון</a> <span>2</span></li>
+    </ul>
+  </section>
+  <section class="sidebar-card">
+    <h2>ארכיון חודשי</h2>
+    <ul class="sidebar-list">
+      <li><a href="/archive/2013/07/">יולי 2013</a> <span>1</span></li><li><a href="/archive/2012/12/">דצמבר 2012</a> <span>2</span></li><li><a href="/archive/2012/11/">נובמבר 2012</a> <span>1</span></li><li><a href="/archive/2012/06/">יוני 2012</a> <span>1</span></li><li><a href="/archive/2012/03/">מרץ 2012</a> <span>1</span></li><li><a href="/archive/2012/02/">פברואר 2012</a> <span>7</span></li><li><a href="/archive/2012/01/">ינואר 2012</a> <span>1</span></li><li><a href="/archive/2011/12/">דצמבר 2011</a> <span>1</span></li><li><a href="/archive/2011/10/">אוקטובר 2011</a> <span>1</span></li><li><a href="/archive/2011/09/">ספטמבר 2011</a> <span>1</span></li><li><a href="/archive/2011/07/">יולי 2011</a> <span>2</span></li><li><a href="/archive/2011/05/">מאי 2011</a> <span>1</span></li><li><a href="/archive/2011/02/">פברואר 2011</a> <span>1</span></li><li><a href="/archive/2010/12/">דצמבר 2010</a> <span>1</span></li><li><a href="/archive/2010/11/">נובמבר 2010</a> <span>2</span></li><li><a href="/archive/2010/10/">אוקטובר 2010</a> <span>1</span></li><li><a href="/archive/2010/09/">ספטמבר 2010</a> <span>1</span></li><li><a href="/archive/2010/08/">אוגוסט 2010</a> <span>1</span></li><li><a href="/archive/2010/07/">יולי 2010</a> <span>1</span></li><li><a href="/archive/2010/06/">יוני 2010</a> <span>2</span></li><li><a href="/archive/2010/05/">מאי 2010</a> <span>1</span></li><li><a href="/archive/2010/03/">מרץ 2010</a> <span>3</span></li><li><a href="/archive/2010/02/">פברואר 2010</a> <span>1</span></li><li><a href="/archive/2010/01/">ינואר 2010</a> <span>2</span></li><li><a href="/archive/2009/12/">דצמבר 2009</a> <span>5</span></li><li><a href="/archive/2009/11/">נובמבר 2009</a> <span>4</span></li><li><a href="/archive/2009/10/">אוקטובר 2009</a> <span>1</span></li><li><a href="/archive/2009/09/">ספטמבר 2009</a> <span>2</span></li><li><a href="/archive/2009/08/">אוגוסט 2009</a> <span>1</span></li><li><a href="/archive/2009/07/">יולי 2009</a> <span>3</span></li><li><a href="/archive/2009/06/">יוני 2009</a> <span>2</span></li><li><a href="/archive/2009/05/">מאי 2009</a> <span>2</span></li><li><a href="/archive/2009/04/">אפריל 2009</a> <span>4</span></li><li><a href="/archive/2009/03/">מרץ 2009</a> <span>3</span></li><li><a href="/archive/2009/02/">פברואר 2009</a> <span>4</span></li><li><a href="/archive/2009/01/">ינואר 2009</a> <span>3</span></li><li><a href="/archive/2008/12/">דצמבר 2008</a> <span>7</span></li><li><a href="/archive/2008/11/">נובמבר 2008</a> <span>4</span></li><li><a href="/archive/2008/10/">אוקטובר 2008</a> <span>3</span></li><li><a href="/archive/2008/09/">ספטמבר 2008</a> <span>3</span></li><li><a href="/archive/2008/08/">אוגוסט 2008</a> <span>6</span></li><li><a href="/archive/2008/07/">יולי 2008</a> <span>6</span></li><li><a href="/archive/2008/06/">יוני 2008</a> <span>4</span></li><li><a href="/archive/2008/05/">מאי 2008</a> <span>3</span></li><li><a href="/archive/2008/04/">אפריל 2008</a> <span>6</span></li><li><a href="/archive/2008/03/">מרץ 2008</a> <span>2</span></li><li><a href="/archive/2008/02/">פברואר 2008</a> <span>5</span></li><li><a href="/archive/2008/01/">ינואר 2008</a> <span>4</span></li><li><a href="/archive/2007/12/">דצמבר 2007</a> <span>8</span></li><li><a href="/archive/2007/11/">נובמבר 2007</a> <span>4</span></li><li><a href="/archive/2007/10/">אוקטובר 2007</a> <span>5</span></li><li><a href="/archive/2007/09/">ספטמבר 2007</a> <span>5</span></li><li><a href="/archive/2007/08/">אוגוסט 2007</a> <span>8</span></li><li><a href="/archive/2007/07/">יולי 2007</a> <span>6</span></li><li><a href="/archive/2007/06/">יוני 2007</a> <span>10</span></li><li><a href="/archive/2007/05/">מאי 2007</a> <span>12</span></li><li><a href="/archive/2007/04/">אפריל 2007</a> <span>5</span></li><li><a href="/archive/2007/03/">מרץ 2007</a> <span>7</span></li><li><a href="/archive/2007/02/">פברואר 2007</a> <span>6</span></li><li><a href="/archive/2006/03/">מרץ 2006</a> <span>3</span></li><li><a href="/archive/2006/02/">פברואר 2006</a> <span>1</span></li><li><a href="/archive/2006/01/">ינואר 2006</a> <span>4</span></li><li><a href="/archive/2005/12/">דצמבר 2005</a> <span>3</span></li><li><a href="/archive/2005/11/">נובמבר 2005</a> <span>2</span></li><li><a href="/archive/2005/10/">אוקטובר 2005</a> <span>6</span></li><li><a href="/archive/2005/09/">ספטמבר 2005</a> <span>9</span></li>
+    </ul>
+  </section>
+</aside>
+      <div class="main-column">
+        <article class="post-page">
+  <header class="post-page__header">
+    <p class="post-page__meta">5 ביוני 2009</p>
+    <h1>פיתוח אב טיפוס אינטראקטיבי עם iPlotz</h1>
+    <p class="post-page__categories"><a href="/categories/תהליכים-שיטות-וכלי-עבודה/">תהליכים, שיטות וכלי עבודה</a></p>
+  </header>
+  <div class="post-page__content">
+    בעוד Axure עולה 590 דולר, <a href="http://iplotz.com/price.php" target="blank">iPlotz עולה 75 דולר (גרסת דסקטופ)</a>. כמו כל תוכנת פרוטוטייפינג ב-iPlotz  ישנה ספרייה של רכיבי ממשק מוכנים שהמשתמש גורר למסכים נפרדים וממפה את הממשק. לאחר מכן ניתן לקשר בין המסכים על ידי הוספת לאיזורים לחיצים. אחד ההבדלים המהותיים בין שתי התוכנות הוא ש-Axure מפיקה דפי HTML בעוד התוצר של iPlotz מעבר לקבצי תמונה הוא פלאש. היתרון הברור לדעתי הוא שעם HTML ניתן להוסיף אלמנטים כמו סרטי וידאו ולפתח את הדפים מעבר למה ש-Axure  מציעה אם קיים הצורך.
+
+<div style="text-align:center">
+	<a href="/files/iplotz_large.jpg"><img src="/files/iplotz_small.jpg" alt="" /></a>
+<small>לחצו להגדלה</small>
+</div>
+
+ספריית המרכיבים המוכנים עשירה (57 במספר) והסגנון הגרפי השירבוטי חשוב ותורם לחווית שימוש חיובית בתוכנה. התוצאה המשורבטת חשובה לדעתי ותורמת בצורה חיובית לחזות מתכלה וזמנית של אב טיפוס. אם הכלי שעובדים איתו מייצר אב טיפוס שנראה יותר מידי ריאליסטי ישנה סכנה שהלקוח והצוות יתחילו להתייחס אליו כמשהו מוצק ואולי אפילו המוצר עצמו. המראה המאולתר של הממשק ב-iPlotz מזכיר לנו ששום רכיב אינו ממוסמר וכי הכל ניתן להזזה ושינוי. זהו משהו שמאוד חשוב בשלבים המוקדמים של התהליך כאשר בוחנים רעיונות במהירות.
+
+כמו ב-Axure גם ב-iPlotz ניתן להגדיר היררכיית מסכים שמדמה את המבנה של אתר HTML. ניתן ליצור היררכייה מורכבת של דפים בתוך דפים במקום רצף לינארי שלא מאפשר לראות קבוצות של מסכים. חווית השימוש נחה וקל מאוד לערוך את המימדים והטקסט של רכיבים שונים. בנוסף לספריית ממשק אפליקציה ואתר אינטרנט ישנה גם ספרייה לרכיבי iPhone המכילה 27 אלמנטים.
+
+כלים כמו iPlotz מאוד יעילים מנסיוני בפגישות וסדנאות גילוי דרישות עם בעלי עניין כאשר רוצים להמחיש רעיונות בזמן אמת תוך כדי דיון. בעבר עשיתי שימוש בפאוורפוינט ומקרן בכדי לגבש במהירות רעיונות שנזרקו לאוויר כדי שאנשים יוכלו לראות משהו מוחשי. הקושי היה ליצור או להעתיק רכיבים כמו תפריטים, כפתורי רדיו ורשימת פריטים אך עם ספריית רכיבים מוכנים התהליך נהיה יותר פשוט ומהיר.
+
+בין אם מדפיסים אותם או משאירים אותם על המחשב, הם מהווים אב טיפוס בסיסי שניתן להתחיל לבדוק עם לקוחות ומשתמשים בכדי להעריך את הפונקציונאליות (מה אפשר לעשות עם הממשק) והשמישות (עד כמה זה פשוט ונח). למרות שמדובר בממשק בסיסי ניתן כבר בשלב זה להעריך את הטרמינולוגיה, הניווט, חלוקת המסכים, הקלט הנדרש מהמשתמש ופלט המערכת באמצעות תסריטי שימוש.
+
+לסיום, תוכנה נוספת בשם <a href="http://www.foreui.com/" target="blank">ForeUI</a> מאפשרת ליצור אב טיפוס אינטראקטיבי ב-HTML. ספריית הרכיבים המוכנים שלה מכילה רק 17 אלמנטים ומהבחינה הזאת היא מוגבלת למרות שאפשר להוסיף תמונות. התוצאה המתקבלת כפי שניתן לראות בצילום המסך מזכירה את Vision. ניתן ליצור רצף לינארי של דפים כמו בפאוורפוינט ולקשר בינהם עם כפתורים אך לא היררכייה.
+
+<div style="text-align:center">
+	<a href="/files/foreUI_large.jpg"><img src="/files/foreUI_small.jpg" alt="" /></a>
+<small>לחצו להגדלה</small>
+</div>
+
+ניתן להתקין גרסת נסיון של iPlotz ו-ForeUI ולהתרשם כיצד הן עובדות.
+  </div>
+  <nav class="post-nav" aria-label="פוסט קודם או הבא">
+  <a class="post-nav__link post-nav__link--previous" href="/posts/2009/05/פיתוח-אב-טיפוס-אינטראקטיבי-עם-axure-rp-pro-55/">
+    <span class="post-nav__label">הקודם</span>
+    <strong>פיתוח אב טיפוס אינטראקטיבי עם Axure RP Pro 5.5</strong>
+  </a>
+  <a class="post-nav__link post-nav__link--next" href="/posts/2009/06/אתם-יודעים-או-שאתם-רק-מנחשים/">
+    <span class="post-nav__label">הבא</span>
+    <strong>אתם יודעים או שאתם רק מנחשים?</strong>
+  </a>
+</nav>
+  <section class="comments">
+  <h2>9 תגובות</h2>
+  <article class="comment">
+    <header class="comment__meta">
+      <strong>ברק דנין</strong>
+      <span>7 ביוני 2009</span>
+    </header>
+    <div class="comment__body">תודה, אמיר, המוצר נראה מעניין. יחד עם הקלילות שהקו החופשי של השרטוטים ב-iPlotz משדר (השם קרע אותי מצחוק), שנראה חביב, אני תוהה איך לקוחות יקבלו קו חופשי כזה. סקיצות Visio, כמו אלה מ-ForeUI, נראות יותר רציניות.
+
+תהיתי אם ניסית/ם את ה-Pencil Project, כלי חינמי ל-prototyping (לא ניסיתי, נראה מבטיח):
+http://www.evolus.vn/Pencil/
+
+אני עובד בחודשים האחרונים עם FireWorks, שבא יחד עם ה-CS3 וגם CS4. הוא לא מאוד יציב, בעיות "Out of Memory" קורות לא מעט, ואין לו רכיבים מוכנים מראש (אפשר להכין ספריה לבד, או להוריד/לקנות ספריות מהרשת). הוא מכוון ביסודו למעצבים גרפיים יותר מאשר למעצבי אינטראקציה. מצד שני, הוא מאוד נוח בשימוש שהוא מאפשר ב-Master Pages, כלומר עמוד או שכבות שמגדירים תוכן שמשותף לכמה עמודים - איזורי ניווט, מסגרות לחלונות וכו'. אפשר גם די בקלות להגדיר בו קישורים בין דפים, וליצא את התוכן ל-PDF, HTML, פלאש, AIR ועוד כמה פורמטים. מעצב גראפי יכול להכנס לתוך ה-Wireframe שבנית ולצבוע אותו עם אותו הכלי, מה שעשוי לחסוך זמן בתהליך העיצוב.
+
+שווה בהקשר הזה להזכיר את שתי הסקירות האלה של כלי prototyping מהזמן האחרון:
+http://www.adaptivepath.com/blog/2009/03/24/rapid-prototyping-tools/
+
+http://www.dexodesign.com/2008/11/07/review-16-user-interface-prototyping-tools/
+
+וגם את FlashCatalyst (לשעבר Thermo) של Adobe. הנה איזה סירטון הייפ של אדובי על הכלי:
+http://tv.adobe.com/#vi+f1532v1001</div>
+  </article><article class="comment">
+    <header class="comment__meta">
+      <strong>מורד שטרן</strong>
+      <span>7 ביוני 2009</span>
+    </header>
+    <div class="comment__body">נראה טוב מאד!</div>
+  </article><article class="comment">
+    <header class="comment__meta">
+      <strong>אמיר דותן</strong>
+      <span>7 ביוני 2009</span>
+    </header>
+    <div class="comment__body">ברק, אני מסכים לגבי השם ולכן נמנעתי מלכתוב אותו בעברית :-) יכול להיות שאפשר לכתוב על זה בפוסט עתידי בנושא היבטים תרבותיים ולוקאליזציה.
+
+לגבי הקו החופשי, אני חושב שזה תלוי מאוד בלקוח כמובן אך יותר מזה בשלב של התהליך. תרשימים מדוייקים לדעתי יכולים לקבע ויוצרים הרגשה שאי אפשר או לא כדאי "להרוס" כאשר המטרה בשלבים הראשונים מבחינתי היא לפקפק ולהרוס כמה שיותר כחלק מתהליך מעגלי של רעיונות ובדיקות עד לגיבוש הממשק. תרשים בפיקסלים מדוייקים יוצר את הרושם המוטעה שמדובר במוצר כאשר מדובר רק באופציה אחת ורעיון שרוצים לבחון בשיא המהירות.
+
+אני לא רואה שירבוטים כאלה נכנסים למסמך סופי אך בשביל לשחק עם רעיונות ולהרים במהירות ממשק (Rapid prototyping) בישיבות הראשונות בכדי שיהיה משהו מוחשי אני חושב שזה פתרון לא רע בכלל שמעודד חשיבה ותחושת חופש יותר מתרשים מדוייק. היה יכול להיות אידיאלי אם היתה אפשרות סימון פשוטה בתוכנה שמציגה את הרכיבים כשרטוט מדוייק אלטרנטיבי במקום שירבוט. ברגע שלכל רכיב יש שתי גרסאות אני מתאר לעצמי שטכנית זאת לא בעיה. אולי זה כבר מיושם ופספסתי.
+
+אפשרות אחרת היא ליצור ספרייה אלטרנטיבית של אובייקטים מדוייקים ולהשתמש בה מתי שצריך. הפלוס הגדול ב-iPlotz כפי שכתבתי היא היכולת לגרור במהירות אובייקטים מוכנים והיררכיית דפים ברורה. השימוש בה מאוד פשוט בהשוואה לפיירוורקס וקל מאוד להפיק תוצאה על המקום.
+
+את Pencil project התקנתי וניסיתי רק לכמה דקות. לא התרשמתי במיוחד והעובדה שמדובר בפלאג-אין לפיירפוקס מגבילה אותו מבחינה פיצ'רים ויכולות לדעתי אך אני צריך להתעמק בו קצת יותר.
+
+מהמעט שיצא לי לראות, פלאש קאטליסט יכול להיות אופציה, במיוחד למי שמפתח אפליקציות פלאש.</div>
+  </article><article class="comment">
+    <header class="comment__meta">
+      <strong>אורן ש.</strong>
+      <span>7 ביוני 2009</span>
+    </header>
+    <div class="comment__body">אמיר, נדמה לי ש- iPlotz (שם גאוני :) דווקא כן יודעת לעשות אבטיפוס דינאמי.
+היא נראית תחליף לא רע ל Axure למי שלא יכול להרשות לעצמו את מחירי הרישיון הגבוהים שלה.
+אהבתי גם את האפשרות לשלב אותה בכלי לניהול פרוייקטים און ליין. זאת נראית לי גישה נכונה כאשר יש בעלי עניין רבים וצריך לשתף פעולה בתכנון הממשק.
+
+ברק, ראשית לגבי פרויקט Pencil השתמשתי בו לא מעט. הגרסאות הראשונות שלו היו מוגבלות מאוד ולא יציבות אבל הוא משתפר. עדיין כלי מוגבל אבל זה נחמד שהוא יושב בתוך הדפדפן. זה מאפשר לשרטט במהירות סקיצות מינימליסטיות תוך כדי סקירה של אתרים או אפליקציות.
+לגבי ההנחה שלך שלקוחות יעדיפו שירטוטים יותר "מיקצועיים" כמו התוצרים של ויזיו, אני חושב שאתה צודק. הלקוחות בארץ ברובם רגילים לעבוד עם מעצבים ובתי תוכנה והקונספט של wirefarming הוא קצת זר להם. אבל יש כאן דילמה. מצד אחד אם השרטוט הוא פשטני מדי מרימים גבה וחושבים שזה לא רציני ומצד שני אם אתה משקיע בשרטוט שנראה טוב אז (כמו שגם אמיר ציין בפוסט) מתחילים להתקבע על העיצוב או שמתמקדים בהערות עיצוביות במקום להתייחס לפלואו, לוגיקה, פנקציונאליות וכו'.
+
+אגב, אם כבר רוצים שירטוטי "ויזיו" שנראים טוב, אני אישית מעדיף לעבוד עם Smart Draw שאיתה קל מאוד להוציא תוצרים אסטטיים ומרשימים.</div>
+  </article><article class="comment">
+    <header class="comment__meta">
+      <strong>אמיר דותן</strong>
+      <span>7 ביוני 2009</span>
+    </header>
+    <div class="comment__body">אורן, אתה צודק. תודה. תיקנתי את הפוסט בהתאם. לא יודע איך פספסתי :-) כנראה שזה לא בולט כל כך בממשק או שבגלל המראה המשורבט הנחתי שמדובר רק במשהו סטטי-ויזואלי. אם כך ההבדל המהותי העיקרי בין iPlotz ו-Axure (מעבר למחיר) הוא ביכולת לייצא אתר HTML ש"חי ונושם" כמו אתר אמיתי לעומת סקיצת פלאש משורבטת. הבדל נוסף שקיים לדעתי הוא שב-Axure מרכיבי הממשק כמו drop down ו-checkboxes עובדים כמו המרכיבים "האמיתיים" שיהיו בממשק בעוד ב- iPlotz הרכיבים הם סטטים ולא ניתן להשתמש בהם מעבר להגדרת התכולה שלהם. אני אבדוק את זה שוב ליתר בטחון מחר בעבודה (יום ראשון עדיין סופש פה :-) ). מהבחינה הזאת iPlotz מזכירה קצת את פאוורפוינט היכן שניתן לקשר בקלות בין מסכים על ידי הוספת אקשן לאובייקטים אך האובייקטים הם בסופו של דבר משהו מצוייר ולא משהו אינטראקטיבי.
+
+אורן, איך היית משווה את Smart Draw ל-Axure?</div>
+  </article><article class="comment">
+    <header class="comment__meta">
+      <strong>אורן ש.</strong>
+      <span>7 ביוני 2009</span>
+    </header>
+    <div class="comment__body">לדעתי Smart Draw לא ממש משתווה ל- Axure בתור כלי לתכנון ממשקים. אין בה את היכולת לתכנן את "עץ" המסכים וההיררכיה. היא הרבה יותר דומה לויזיו בגישה שלה- תכנון מסך אחד בכל פעם.
+היתרון שלה על ויזיו (וגם על axure) הוא בכך שהתוצר הסופי הרבה יותר אסטטי וניתן להגיע לעיצובים מרשימים בקלות יחסית ומבלי להפעיל את הפוטושופ.
+
+בסך הכל, אם הייתי צריך לבחור רק תוכנה אחת, הייתי בוחר ב- axure, שנותנת לדעתי מענה לרוב הצרכים של תכנון הממשק, אבל יש כאמור מצבים בהם לקוחות מעקמים את האף למראה התוצרים הסכמטיים מדי ואז טוב שיש כלי שאפשר לשרטט אתו מסכים במהירות אבל גם להציג משהו שנראה מרשים.
+
+עוד תוכנה חביבה שיצא לי לבדוק נקראת denim (והיא גם חינמית). הייעוד שלה הוא בעיקר לעבודה על מחשבי טאבלט (עם מסך מגע) והיא ממירה שירבוטים שנעשים ב"יד חופשית" על המסך לאלמנטים אינטראקטיביים של אבטיפוס. יש בה גם גישה קצת שונה לתכנון המבנה של האתר. במקום תצוגת העץ והיררכיה הברורה, המטפורה היא של zoom פנימה והחוצה, כמו במפה, כאשר הדפים יכולים להיות "מפוזרים על משטח" (קצת כמו mind mapping) וניתן ליצור קישורים ביניהם על ידי מתיחת קווים. נחמד.</div>
+  </article><article class="comment">
+    <header class="comment__meta">
+      <strong>אמיר דותן</strong>
+      <span>11 ביוני 2009</span>
+    </header>
+    <div class="comment__body">תודה :-)</div>
+  </article><article class="comment">
+    <header class="comment__meta">
+      <strong>רן לירון</strong>
+      <span>6 בספטמבר 2009</span>
+    </header>
+    <div class="comment__body">הכלי המועדף עלי ל-Prototyping הוא PowerPoint.
+הוא מאפשר לייצר Prototypes במהירות,
+ברמות שונות של דיוק (fidelity) עם אופציה להדמיית אינטראקציה,
+נוח, פשוט, זמין ובקיצור -
+כלי מצוין.
+מאמר חביב שמסביר על PowerPoint prototyping:
+http://www.boxesandarrows.com/view/interactive</div>
+  </article><article class="comment">
+    <header class="comment__meta">
+      <strong>איריס</strong>
+      <span>22 בספטמבר 2009</span>
+    </header>
+    <div class="comment__body">אני עכשיו בוחנת 2 תוכנות חדשות: irise ומבית אדובי: Catalyst. אם מישהו שמע/מכיר/יודע, אשמח לקבל אינפוטים. תודה</div>
+  </article>
+</section>
+</article>
+      </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
